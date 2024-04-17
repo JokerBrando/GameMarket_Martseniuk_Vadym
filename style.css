@@ -1,3 +1,14 @@
-body{
-    background-color: antiquewhite;
+
+
+
+/* Стилі для сторінки з додаванням гри */
+body.add-game-page {
+    background-color: rgb(223, 155, 54);
+
+}
+
+/* Стилі для кнопки "назад" */
+button.back-button {
+    background-color: rgb(223, 155, 54);
+
 }
