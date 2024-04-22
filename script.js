@@ -1,17 +1,14 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Отримуємо посилання на кнопку
-    var addGameButton = document.getElementById("addGameButton");
+// Отримання посилань на кнопки
+var button1 = document.getElementById('button1');
+var button2 = document.getElementById('button2');
 
-    // Додаємо обробник подій для кнопки
-    addGameButton.addEventListener("click", function() {
-        // Переходимо на сторінку з додаванням гри
-        window.location.href = "add_game_page.html";
-    });
+// Додавання обробника подій на кожну кнопку
+button1.addEventListener('click', function() {
+    // Перенаправлення на першу сторінку
+    window.location.href = 'page1.html';
 });
 
-
-// script.js
-
-function goBack() {
-    window.history.back();
-}
+button2.addEventListener('click', function() {
+    // Перенаправлення на другу сторінку
+    window.location.href = 'page2.html';
+});
