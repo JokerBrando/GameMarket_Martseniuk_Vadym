@@ -1,15 +1,9 @@
+/* Задній фон */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+    transition: background-color 1s linear; /* Плавний перехід кольору фону */
 }
 
-h1 {
-    margin-top: 50px;
-}
-
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+/* Контент */
+.content {
+    transition: color 1s linear; /* Плавний перехід кольору тексту */
 }
