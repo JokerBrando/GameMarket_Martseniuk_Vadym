@@ -13,15 +13,17 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-image: url('background.jpg'); /* Додайте URL до вашого зображення */
-            background-size: cover;
-            background-position: center;
+            background-color: black; /* Чорний фон */
             transition: background-color 0.5s ease; /* Анімація зміни кольору фону */
         }
 
         .content {
             text-align: center;
+            margin-top: 0; /* Початкове положення */
             transition: margin-top 0.5s ease; /* Анімація зміни положення тексту */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Розташування по центру */
         }
 
         h1 {
@@ -46,6 +48,8 @@
         var button1 = document.getElementById('button1');
         var button2 = document.getElementById('button2');
         var content = document.querySelector('.content');
+        var scrollPosition = 0;
+        var maxScroll = 200; // Максимальна дозволена прокрутка, змініть на своє власне значення
 
         // Додавання обробника подій на кожну кнопку
         button1.addEventListener('click', function() {
@@ -58,15 +62,24 @@
             window.location.href = 'page2.html';
         });
 
-        // Відслідковування події прокрутки миші
+        // Відслідковування події прокрутки миші з плавною анімацією та границями
         window.addEventListener('wheel', function(event) {
-            if (event.deltaY > 0) {
-                // Прокрутка вниз
-                content.style.marginTop = '-2000px'; // Змініть значення на те, яке вам підходить
-            } else {
-                // Прокрутка вгору
-                content.style.marginTop = '0'; // Повертаємо текст на початкове положення
+            event.preventDefault(); // Зупиняємо стандартну прокрутку
+            const deltaY = event.deltaY; // Отримуємо напрямок прокрутки
+            const speed = 10; // Швидкість прокрутки, змініть на свій смак
+
+            // Оновлення позиції прокрутки
+            scrollPosition += deltaY * speed;
+
+            // Перевірка, чи не виходить позиція прокрутки за межі
+            if (scrollPosition > 0) {
+                scrollPosition = 0;
+            } else if (scrollPosition > maxScroll) {
+                scrollPosition = maxScroll;
             }
+
+            // Зміна положення тексту з плавною анімацією
+            content.style.marginTop = `${scrollPosition}px`;
         });
     </script>
 </body>
