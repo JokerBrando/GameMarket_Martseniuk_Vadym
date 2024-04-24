@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>java the !best</title>
+    <link rel="stylesheet" href="flex.css">
 </head>
-<link rel="stylesheet" href="flex.css">
 <body>
-    <body>
-        
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <button type="button" class="button">Click me!</button>
-    </body>
+    <div>
+        <span>4</span> <span>3</span> <span>2</span> <span>1</span>
+        <button type="button" class="button" onclick="playVideo()">Click me!</button>
+    </div>
+    <video id="myVideo" style="display: none;" controls>
+        <source src="2121.mp4" type="video/mp4">
+    </video>
+    
+    <script src="flex.js"></script>
 </body>
 </html>
