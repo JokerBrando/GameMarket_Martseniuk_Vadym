@@ -1,0 +1,54 @@
+body{
+font-family: sans-serif;    
+background-color: rgb(204, 247, 14);
+display: flex;
+justide-content: center;
+
+}
+
+content {
+
+   width: 420px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 10px;
+
+
+}
+
+div{
+
+    border: 1px solid darkgray;
+
+}
+
+.title{
+
+
+
+
+
+
+
+
+
+
+
+    
+}
+
+
+.items{
+
+   padding: 10px;
+   display: flex;
+   gap: 20px;
+
+
+}
+
+.item{
+
+
+}
