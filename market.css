@@ -76,3 +76,11 @@ letter-spacing: 3px;
 .contacts p:last-child{
    border-left: 3px solid rgb(253, 48, 48);;
 }
+
+.license {
+
+   font-size: 9px;
+   text-align: justify;
+   color: rgb(120, 120, 120);
+
+}
