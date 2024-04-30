@@ -1,8 +1,8 @@
 body{
 font-family: sans-serif;    
-background-color: rgb(204, 247, 14);
+background-color: rgb(247, 138, 14);
 display: flex;
-justide-content: center;
+justify-content: center;
 
 }
 
@@ -25,15 +25,17 @@ div{
 
 .title{
 
+background: rgb(253, 48, 48);
+width: auto;
+color: white;
+padding: 10px;
+border-radius: 5px;
 
-
-
-
-
-
-
-
-
+text-transform: uppercase;
+font-size: 20px;
+text-align: center;
+font-weight: bold;
+letter-spacing: 3px;
 
     
 }
@@ -41,14 +43,36 @@ div{
 
 .items{
 
-   padding: 10px;
    display: flex;
-   gap: 20px;
+   flex-wrap: wrap;
+   justify-content: space-between;
 
 
 }
 
 .item{
 
+   width: 200px;
+   height: 320px;
+   margin-bottom: 10px;
 
+   border: 1px solid rgb(194, 194, 194);
+   border-radius: 5px;
+   box-shadow: 0 0 7px rgba(0, 0, 0, 0.3)
+
+
+
+}
+
+
+.contract p{
+   margin: 3px;
+}
+
+.contact p:first-child{
+   font-weight: bold;
+}
+
+.contacts p:last-child{
+   border-left: 3px solid rgb(253, 48, 48);;
 }
