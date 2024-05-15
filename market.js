@@ -2,28 +2,23 @@
 console.log('Перевірка підключеного файлу скриптів market.js')
 
 //визначення масиву товарів
-let itemsArray = ['Газонокосарка 56',
-'Електриччний триметр',
-'Електрична газонокосарка',
-'Акумулятор',
-'Електриччний триметр',
-'Електрична газонокосарка',
-'Акумулятор',
-'Електриччний триметр',
-'Електрична газонокосарка',
-'Акумулятор',
-'Електриччний триметр',
-'Електрична газонокосарка',
-'Акумулятор',
-'Електриччний триметр',
-'Електрична газонокосарка',
-'Акумулятор',
-'Електриччний триметр',
-'Електрична газонокосарка',
-'Акумулятор',
-'Електриччний триметр',
-'Електрична газонокосарка',
-'Акумулятор',
+let itemsArray = [
+
+    {
+        firstName: "Саб",
+        lastName: "Зеро",
+        power: "freeze",
+        famous:  "S+ Tear",
+        photo : "https://www.mortalkombatwarehouse.com/mk12/renders/subzero.png"
+    },
+
+    {
+        firstName: "Скорпіон",
+        lastName: "Улюбленець Саб Зеро",
+        power: "freeze",
+        famous:  "S+ Tear",
+        photo : "https://i.redd.it/rr1ri29i6msb1.jpg"
+    }
 ]
 
 let itemsDiv = document.getElementById("items");
@@ -34,8 +29,11 @@ if (itemsDiv){
         itemsDiv.innerHTML += 
         `
         <div class = "item">
-        <h2>Товар №${index+1} з ${itemsArray.length}</h2>
-        <p>${item}</p>
+        <h2>Персонаж №${index+1} з ${itemsArray.length}</h2>
+        <p>${item.lastName} ${item.firstName}</p>
+        <p><img src="${item.photo}" alt="${item.lastName} ${item.firstName}" class="user-photo"></p>
+        <p>power: ${item.power}<p>
+        <p>famous: ${item.famous}</p>
         </div>
         `
     })
@@ -43,6 +41,27 @@ if (itemsDiv){
 } else {
     console.log('Блок товарів не знайдено')
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //     console.log(itemsDiv)
 
     
