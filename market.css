@@ -94,7 +94,7 @@ letter-spacing: 3px;
    .item{
    
       width: 200px;
-      height: 320px;
+      height: 620px;
       margin-bottom: 10px;
    
       border: 1px solid rgb(194, 194, 194);
@@ -310,3 +310,21 @@ letter-spacing: 3px;
    color: rgb(120, 120, 120);
 }
 
+.user-photo {
+   width: 50%; /* Зменшує ширину до 50% від батьківського контейнера */
+   max-width: 300px; /* Максимальна ширина 300px */
+   height: auto; /* Автоматична висота для збереження пропорцій */
+   border: 2px solid #000; /* Рамка 2px чорного кольору */
+   border-radius: 10px; /* Закруглення кутів */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тінь */
+}
+
+
+.user-photo {
+   width: 90%; /* Зменшує ширину до 50% від батьківського контейнера */
+   max-width: 300px; /* Максимальна ширина 300px */
+   height: auto; /* Автоматична висота для збереження пропорцій */
+   border: 2px solid #000; /* Рамка 2px чорного кольору */
+   border-radius: 10px; /* Закруглення кутів */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тінь */
+}

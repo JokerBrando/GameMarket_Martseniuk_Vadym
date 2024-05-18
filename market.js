@@ -5,19 +5,19 @@ console.log('Перевірка підключеного файлу скрипт
 let itemsArray = [
 
     {
-        firstName: "Саб",
-        lastName: "Зеро",
+        firstName: "Зеро",
+        lastName: "Саб",
         power: "freeze",
         famous:  "S+ Tear",
-        photo : "https://www.mortalkombatwarehouse.com/mk12/renders/subzero.png"
+        photo : "https://i.redd.it/rr1ri29i6msb1.jpg"
     },
 
     {
         firstName: "Скорпіон",
         lastName: "Улюбленець Саб Зеро",
-        power: "freeze",
+        power: "fire",
         famous:  "S+ Tear",
-        photo : "https://i.redd.it/rr1ri29i6msb1.jpg"
+        photo : "https://upload.wikimedia.org/wikipedia/ru/thumb/9/95/Scorpion_in_MK1.png/411px-Scorpion_in_MK1.png"
     }
 ]
 
