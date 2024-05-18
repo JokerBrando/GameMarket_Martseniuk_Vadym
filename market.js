@@ -18,6 +18,21 @@ let itemsArray = [
         power: "fire",
         famous:  "S+ Tear",
         photo : "https://upload.wikimedia.org/wikipedia/ru/thumb/9/95/Scorpion_in_MK1.png/411px-Scorpion_in_MK1.png"
+    },
+    {
+        firstName: "Рейден",
+        lastName: "Не вертає долги",
+        power: "electric",
+        famous:  "A+ Tear",
+        photo : "https://wiki.supercombo.gg/images/thumb/d/db/Mk1_raiden_portrait.png/450px-Mk1_raiden_portrait.png"
+    }
+    ,
+    {
+        firstName: "він хоче себе проявити, щоб його запомнили",
+        lastName: "Смоук -",
+        power: "smoke",
+        famous:  "F Tear",
+        photo : "https://upload.wikimedia.org/wikipedia/ru/thumb/c/c5/Smoke_in_MK1.png/411px-Smoke_in_MK1.png"
     }
 ]
 
