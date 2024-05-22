@@ -206,35 +206,24 @@ let itemsArray =[
 let itemsDiv = document.getElementById("items");
 
 if (itemsDiv) {
-         itemsArray.forEach((item, index) =>{
-             // console.log(item)
-             itemsDiv.innerHTML += 
-             `
-             <div id="item" class="item">
-
-             <div class="item-title">${item.title1_1}</div>
-             
-                <div><img src="${item.title1_2}" class= "user-photo"></div>
-
+    itemsArray.forEach((item, index) => {
+        itemsDiv.innerHTML +=
+            `<div id="item${index}" class="item">
+                <div class="email">${item.email}</div>
+                <div class="class">${item.class}</div>
                 <div class="parts-pay">
-                    <div><img src="${item.title1_3}" class= "user-photo1"></div>
-                    <div><img src="${item.title1_4}" class= "user-photo2"></div>
+                    <div><img src="${item.githubRepository}" class="user-photo1"></div>
+                    <div><img src="${item.liveDemo}" class="user-photo2"></div>
                 </div>
-
                 <div class="prise">
-                    <div class="kdkd">${item.title1_5}</div>
-                    <div>${item.title1_6}</div>
+                    <div class="kdkd">${item.googleDrive}</div>
+                    <div>${item.googleForm}</div>
                 </div>
-
                 <div class="prise bonus">
-                    <div class="txt122">${item.title1_7}</div>
+                    <div class="txt122">${item.marketPage}</div>
                 </div>
-
-                
-            </div>
-             `
-         })
-    
-     } else {
-         console.log('Блок товарів не знайдено')
-     }
+            </div>`;
+    });
+} else {
+    console.log('Блок товарів не знайдено');
+}
