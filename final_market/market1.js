@@ -3,7 +3,6 @@ let itemsArray = [
     {
         email: "23a_bam@liceum.ztu.edu.ua",
         class: "10-А 1",
-        photo: "final market/img/Боровий.jpg",
         studentName: "Боровий Артур",
         projectName: "Дід проти москалів",
         githubRepository: "https://github.com/23a-bam/Phaser2ndGame",
@@ -13,7 +12,9 @@ let itemsArray = [
         githubRepository1: "https://github.com/23a-bam/GameMarket_Borovyi",
         liveDemo1: "https://23a-bam.github.io/GameMarket_Borovyi/",
         marketPage: "https://23a-bam.github.io/GameMarket_Borovyi/market.html",
-        finalmarketpage: ""
+        finalmarketpage: "",
+        authorPhoto: "final_market/img/Боровий.jpg",
+        gamePhoto: ""
     },
     {
         email: "23a_gki@liceum.ztu.edu.ua",
@@ -210,7 +211,7 @@ if (itemsDiv) {
 
                 <div class="item-title">${item.projectName}</div>
 
-                <div><img src="${item.photo}" class= "user-photo"></div>
+                <div><img src="${item.authorPhoto}" class= "authorPhoto"></div>
 
                 <div>Ім'я розробника: ${item.studentName}</div>
 
